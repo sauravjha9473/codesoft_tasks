@@ -1,0 +1,609 @@
+/* ===========================
+   Google Font
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#050816;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+Navbar
+=========================== */
+
+header{
+
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+
+    background:rgba(5,8,22,.85);
+    backdrop-filter:blur(12px);
+
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#7c5cff;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#7c5cff;
+
+}
+
+.btn{
+
+    background:#7c5cff;
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#9f87ff;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+Hero
+=========================== */
+
+.hero{
+
+    width:90%;
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:50px;
+
+}
+
+.hero-content{
+
+    flex:1;
+
+}
+
+.hero-content h1{
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+    font-size:18px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.primary-btn{
+
+    background:#7c5cff;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.secondary-btn{
+
+    border:2px solid #7c5cff;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.secondary-btn:hover{
+
+    background:#7c5cff;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 0 40px rgba(124,92,255,.4);
+
+}
+
+/* ===========================
+About
+=========================== */
+
+.about{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    color:#cbd5e1;
+
+    width:70%;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+Services
+=========================== */
+
+section{
+
+    padding:100px 0;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+.cards{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#111827;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(124,92,255,.4);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#7c5cff;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:20px;
+
+}/* ===========================
+Features
+=========================== */
+
+.features{
+    width:90%;
+    margin:auto;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.feature-grid div{
+    background:#111827;
+    padding:35px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.feature-grid div:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(124,92,255,.35);
+}
+
+.feature-grid h3{
+    color:#7c5cff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.feature-grid p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* ===========================
+Pricing
+=========================== */
+
+.price-card{
+    background:#111827;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.price-card h3{
+    font-size:28px;
+}
+
+.price-card h1{
+    font-size:60px;
+    margin:20px 0;
+    color:#7c5cff;
+}
+
+.price-card p{
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.price-card button{
+    background:#7c5cff;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.price-card button:hover{
+    transform:scale(1.05);
+}
+
+.price-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(124,92,255,.35);
+}
+
+.popular{
+    border:2px solid #7c5cff;
+}
+
+/* ===========================
+Contact
+=========================== */
+
+form{
+    width:600px;
+    max-width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+    background:#111827;
+    border:none;
+    outline:none;
+    padding:18px;
+    border-radius:12px;
+    color:white;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+}
+
+form button{
+    background:#7c5cff;
+    color:white;
+    border:none;
+    padding:16px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#9f87ff;
+}
+
+/* ===========================
+Footer
+=========================== */
+
+footer{
+    text-align:center;
+    padding:50px 20px;
+    background:#030712;
+    margin-top:80px;
+}
+
+footer h3{
+    color:#7c5cff;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#94a3b8;
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:120px;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.about p{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.btn,
+.primary-btn,
+.secondary-btn{
+    width:100%;
+    text-align:center;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+section h2{
+    font-size:34px;
+}
+
+.price-card h1{
+    font-size:48px;
+}
+
+}
+
+/*==========================
+Skills
+===========================*/
+
+.skills{
+
+    padding:100px 8%;
+    background:#050816;
+
+}
+
+.skills h2{
+
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+    color:#fff;
+
+}
+
+.skills-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+
+}
+
+.skill-card{
+
+    background:#111827;
+    padding:40px 20px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+    border:1px solid rgba(124,92,255,.25);
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(124,92,255,.4);
+
+}
+
+.skill-card i{
+
+    font-size:60px;
+    color:#7c5cff;
+    margin-bottom:20px;
+
+}
+
+.skill-card h3{
+
+    font-size:24px;
+    color:white;
+
+}

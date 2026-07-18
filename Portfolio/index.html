@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Saurav Jha - Portfolio</title>
+  <!-- this is my personal portfolio website -->
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #cccccc;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .section h2 {
+      color: #2c3e50;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 10px;
+    }
+
+    .skills-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .skills-list li {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .project-box {
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+
+    .project-box h3 {
+      margin-top: 0;
+      color: #34495e;
+    }
+
+    .project-box a {
+      color: #2c3e50;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .project-box a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 0 auto 15px auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #2c3e50;
+      object-fit: cover;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .resume-btn:hover {
+      background-color: #34495e;
+    }
+
+    .contact-info {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .contact-info a {
+      color: #f1c40f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Saurav Jha</h1>
+    <p>Web Developer | CS Student</p>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="My photo" class="profile-pic">
+      <p>
+        Hi! My name is Saurav Jha. I am a Computer Science student studying B.Tech at 
+        KCC Institute of Technology and Management. I am learning web development and 
+        I like building small projects to practice my skills. I have completed internships 
+        in Java and Web Development where I learned a lot of new things.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>My Skills</h2>
+      <!-- these are the skills i know so far -->
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java (basics)</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>My Projects</h2>
+
+      <div class="project-box">
+        <h3>Landing Page</h3>
+        <p>A simple landing page made using HTML and CSS during my internship.</p>
+        <a href="https://sauravjha9473.github.io/codsoft_tasks/Landing-Page/" target="_blank">View Live →</a>
+      </div>
+
+      <div class="project-box">
+        <h3>Calculator</h3>
+        <p>A basic calculator app made using HTML, CSS and JavaScript.</p>
+        <a href="https://sauravjha9473.github.io/codsoft_tasks/Calculator/" target="_blank">View Live →</a>
+      </div>
+
+      <div class="project-box">
+        <h3>This Portfolio</h3>
+        <p>The website you are looking at right now! Made to show my skills.</p>
+        <a href="https://sauravjha9473.github.io/codsoft_tasks/Portfolio/" target="_blank">View Live →</a>
+      </div>
+    </div>
+
+    <div class="section" style="text-align: center;">
+      <h2>Resume</h2>
+      <p>You can download my resume from the link below.</p>
+      <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+    </div>
+
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p>Email: sauravjha9473@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/sauravjha9473">github.com/sauravjha9473</a></p>
+    </div>
+
+  </div>
+
+  <footer>
+    Made by Saurav Jha
+  </footer>
+
+</body>
+</html>
