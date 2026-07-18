@@ -1,22 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <title>Focusly - Landing Page</title>
+  <title>Saurav Jha - Landing Page</title>
   <!-- landing page task for codsoft internship -->
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
       color: #333333;
     }
 
     .navbar {
-      background-color: #4CAF50;
-      padding: 15px 30px;
+      background-color: #222222;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .navbar h2 {
@@ -24,122 +28,199 @@
       margin: 0;
     }
 
-    .navbar a {
+    .navbar p {
+      color: #aaaaaa;
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .nav-links a {
       color: white;
       text-decoration: none;
       margin-left: 20px;
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #4CAF50;
     }
 
     .hero {
-      background-color: #e8f5e9;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .hero h1 {
-      font-size: 40px;
-      color: #2e7d32;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #555;
-      max-width: 500px;
-      margin: 0 auto 25px auto;
-    }
-
-    .btn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .btn:hover {
-      background-color: #388e3c;
-    }
-
-    .features {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    .features h2 {
-      color: #2e7d32;
-      margin-bottom: 30px;
-    }
-
-    .feature-container {
+      background-color: #555555;
       display: flex;
-      justify-content: center;
-      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 40px;
       flex-wrap: wrap;
     }
 
-    .feature-box {
-      background-color: #f1f8f2;
-      border: 1px solid #c8e6c9;
-      border-radius: 8px;
-      padding: 20px;
-      width: 220px;
+    .hero-text {
+      color: white;
+      max-width: 500px;
     }
 
-    .feature-box h3 {
-      color: #388e3c;
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
     }
 
-    .footer {
-      background-color: #2e7d32;
+    .hero-text p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    .hero-img img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 26px;
+      border: none;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #3d8b40;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .about-content {
+      max-width: 550px;
+    }
+
+    .about h2 {
+      font-size: 28px;
+      color: #222222;
+      border-bottom: 3px solid #4CAF50;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    .about p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555555;
+    }
+
+    .skills {
+      background-color: #f5f5f5;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .skills h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #222222;
+    }
+
+    .skill-list {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .skill-item {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 14px 22px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    footer {
+      background-color: #222222;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+      padding: 25px;
     }
   </style>
 </head>
 <body>
 
   <div class="navbar">
-    <h2>Focusly</h2>
     <div>
-      <a href="#features">Features</a>
-      <a href="#" onclick="alert('Login feature coming soon!'); return false;">Login</a>
+      <h2>Saurav Jha</h2>
+      <p>Web Developer Portfolio</p>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 
   <div class="hero">
-    <h1>Stay Focused, Get More Done</h1>
-    <p>Focusly is a simple timer app that helps you focus on one task at a time without distractions.</p>
-    <a href="#" class="btn" onclick="alert('Thanks for trying Focusly! Sign up coming soon.'); return false;">Get Started</a>
-  </div>
-
-  <div class="features" id="features">
-    <h2>Why Use Focusly?</h2>
-    <div class="feature-container">
-      <div class="feature-box">
-        <h3>Simple Timer</h3>
-        <p>Just set a time and start focusing. No complicated settings.</p>
-      </div>
-      <div class="feature-box">
-        <h3>No Notifications</h3>
-        <p>All your notifications stay off during your focus session.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Free to Use</h3>
-        <p>Focusly is completely free with no hidden charges.</p>
-      </div>
+    <div class="hero-text">
+      <h1>Hi, I'm Saurav Jha</h1>
+      <p>
+        I am a Computer Science student and web developer learning HTML, CSS
+        and JavaScript. I enjoy building small projects and improving my
+        skills every day.
+      </p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Saurav Jha">
     </div>
   </div>
 
-  <div class="footer">
-    <p>&copy; 2026 Focusly. Made by Saurav Jha.</p>
+  <div class="about" id="about">
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Saurav Jha" style="width:220px;height:220px;border:5px solid #4CAF50;">
+    </div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I am currently studying B.Tech in Computer Science at KCC Institute of
+        Technology and Management. I have completed internships in Java and
+        Web Development, where I learned to build real projects instead of
+        just tutorials. I am passionate about learning new technologies and
+        improving my coding skills every day.
+      </p>
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+    </div>
   </div>
+
+  <div class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Java (basics)</div>
+      <div class="skill-item">Git & GitHub</div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>Email: sauravjha9473@gmail.com</p>
+    <p>&copy; 2026 Saurav Jha. Made for CodSoft internship.</p>
+  </footer>
 
 </body>
 </html>
